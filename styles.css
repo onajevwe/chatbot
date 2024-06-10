@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e0f7e9;
+    background-color: #eeafb8;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -10,11 +10,9 @@ body {
 }
 
 .container {
-    background-color: #e0f7e9;
+    background-color: #c6e6d2;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 9px 9px 16px #b8c2be,
-                -9px -9px 16px #ffffff;
 }
 
 h1 {

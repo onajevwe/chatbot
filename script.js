@@ -2,7 +2,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     event.preventDefault(); // Prevent form submission
 
     let password = document.getElementById('password').value;
-    let confirmPassword = document.getElementById('confirm-password').value;
+    let confirmPassword = document.getElementById('confirm-password').val809IUPO ue;
 
     if (password !== confirmPassword) {
         alert('Passwords do not match!');
