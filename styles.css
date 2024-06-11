@@ -1,6 +1,6 @@
 
 body {
-    background-color: #eeafb8;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -9,53 +9,62 @@ body {
     margin: 0;
 }
 
-.container {
+/* .container {
     background-color: #c6e6d2;
     padding: 20px;
     border-radius: 20px;
-}
+} */
 
 h1 {
     text-align: center;
-    color: #2e7d32;
+    color: #000000;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} 
 
 .input-group {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    width: 100%;
-    max-width: 400px;
+    width: 125%;
+    max-width: 600px;
 }
 
 label {
-    width: 150px; /* Adjust this width to align text boxes */
+    width: 160px; /* Adjust this width to align text boxes */
     margin-right: 10px;
-    color: #2e7d32;
+    color: #000000;
     text-align: right;
 }
 
-input {
+input, select {
     flex: 1;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: inset 4px 4px 8px #b8c2be,
-                inset -4px -4px 8px #ffffff;
+    box-shadow: inset 4px 4px 8px #b8c2be, inset -4px -4px 8px #ffffff; /* Adds inner shadow for a 3D effect */
     font-size: 16px;
+    appearance: none; 
+    background-color: #ffffff;
+}
+/* Custom dropdown arrow */
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%232e7d32" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    padding-right: 40px; /* Add space for the arrow */
 }
 
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background-color: #2e7d32;
+    background-color: #3674cb;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -66,5 +75,5 @@ button {
 }
 
 button:hover {
-    background-color: #27632a;
+    background-color: #1255b3;
 }
