@@ -1,4 +1,3 @@
-
 body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
@@ -9,13 +8,51 @@ body {
     margin: 0;
 }
 
-/* .container {
-    background-color: #c6e6d2;
-    padding: 20px;
-    border-radius: 20px;
-} */
+.login-link {
+    color: #3674cb; /* Color for the login link */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.login-link:hover {
+    color: #1255b3; /* Change color on hover */
+}
+
+.account-text {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space above the text */
+}
+
+.error {
+    /* CSS class for error styling */
+    color: lightcoral;
+    /* Light red text color */
+}
+
+.error-message {
+    color: rgb(240, 53, 53);
+    /* Light red text color */
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+
+.password-guidelines {
+    display: inline-block; /* Display inline with input */
+    margin-left: 120px; /* Space between input and guidelines */
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: #333; /* Darker color for guidelines */
+    font-size: 14px; /* Slightly smaller font size */
+}
+
 
 h1 {
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
     text-align: center;
     color: #000000;
 }
@@ -24,7 +61,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-} 
+}
 
 .input-group {
     display: flex;
@@ -35,43 +72,48 @@ form {
 }
 
 label {
-    width: 160px; /* Adjust this width to align text boxes */
+    width: 160px;
+    /* Adjust this width to align text boxes */
     margin-right: 10px;
     color: #000000;
     text-align: right;
 }
 
-input, select {
+input,
+select {
     flex: 1;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: inset 4px 4px 8px #b8c2be, inset -4px -4px 8px #ffffff; /* Adds inner shadow for a 3D effect */
+    box-shadow: inset 4px 4px 8px #b8c2be, inset -4px -4px 8px #ffffff;
+    /* Adds inner shadow for a 3D effect */
     font-size: 16px;
-    appearance: none; 
+    appearance: none;
     background-color: #ffffff;
 }
+
 /* Custom dropdown arrow */
 select {
     background-image: url('data:image/svg+xml;utf8,<svg fill="%232e7d32" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 20px;
-    padding-right: 40px; /* Add space for the arrow */
+    padding-right: 40px;
+    /* Add space for the arrow */
 }
 
 button {
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #3674cb;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 4px 4px 8px #b8c2be,
-                -4px -4px 8px #ffffff;
+    box-shadow: 4px 4px 8px #b8c2be, -4px -4px 8px #ffffff;
     transition: background-color 0.3s;
     margin-top: 20px;
+    width: 50%;
 }
 
 button:hover {

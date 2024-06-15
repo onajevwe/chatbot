@@ -1,58 +1,52 @@
-<!-- For every line, write a comment explaining what it's does -->
-<!DOCTYPE html> <!-- Tells your browser this is a html5 document -->
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Sets the viewport for responsive design -->
+    <title>Sign Up</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
+
 <body>
-    <div class="container">
-        <h1>Sign Up on HairFro</h1>
+    <div class="container"> <!-- Container for the form elements -->
+        <h1>HairFro</h1> <!-- Heading for the sign-up form -->
+        <h2>Create Account</h2>
         <form id="signup-form">
-            <div class="input-group">
-                <!-- this is where you enter the first name -->
-                <label for="username">Username</label> 
-                <input type="text" id="first-name" name="first-name" required>
+            <div class="input-group"> <!-- Grouping input field for username -->
+                <label for="username">Username</label> <!-- Label for the username field -->
+                <input type="text" id="username" name="username" required> <!-- Input field for username -->
             </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <div class="input-group"> <!-- Grouping input field for preferred name -->
+                <label for="preferred">Preferred Name</label> <!-- Label for the preferred name field -->
+                <input type="text" id="preferred" name="preferred name" required> <!-- Input field for preferred name -->
             </div>
-            <div class="input-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+            <div class="input-group"> <!-- Grouping input field for password -->
+                <label for="password">Password</label> <!-- Label for the password field -->
+                <input type="password" id="password" name="password" required> <!-- Input field for password -->
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password</label>
+            <div class="input-group"> <!-- Grouping input field for confirm password -->
+                <label for="confirm-password">Confirm Password</label> <!-- Label for the confirm password field -->
                 <input type="password" id="confirm-password" name="confirm-password" required>
+                <!-- Input field for confirm password -->
             </div>
-            <div class="input-group"> <!-- Grouping input field for hair type -->
-                <label for="hair-type">Hair Type</label> <!-- Label for the hair type field -->
-                <select id="hair-type" name="hair-type" required> <!-- Dropdown menu for selecting hair type -->
-                    <option value="">Select your hair type</option> <!-- Default option -->
-                    <option value="1a">1a</option> <!-- Hair type option 1a -->
-                    <option value="1b">1b</option> <!-- Hair type option 1b -->
-                    <option value="1c">1c</option> <!-- Hair type option 1c -->
-                    <option value="2a">2a</option> <!-- Hair type option 2a -->
-                    <option value="2b">2b</option> <!-- Hair type option 2b -->
-                    <option value="2c">2c</option> <!-- Hair type option 2c -->
-                    <option value="3a">3a</option> <!-- Hair type option 3a -->
-                    <option value="3b">3b</option> <!-- Hair type option 3b -->
-                    <option value="3c">3c</option> <!-- Hair type option 3c -->
-                    <option value="4a">4a</option> <!-- Hair type option 4a -->
-                    <option value="4b">4b</option> <!-- Hair type option 4b -->
-                    <option value="4c">4c</option> <!-- Hair type option 4c -->
-                </select>
+            <div id="error-message" class="error-message"></div> <!-- Error message element -->
+            <div class="password-guidelines"> <!-- Password policy guidelines -->
+                <b>Your password must be:</b>
+                <ul>
+                    <li>At least 8 characters long</li>
+                    <li>Contain at least one uppercase letter</li>
+                    <li>Contain at least one lowercase letter</li>
+                    <li>Contain at least one number</li>
+                    <li>Contain at least one special character</li>
+                </ul>
             </div>
-            <button type="submit">Sign Up</button> <!-- Submit button for the form -->
+            <button type="submit" onclick="window.location.href='welcome.html'">Sign Up</button> <!-- Submit button for the form -->
         </form>
+        <p class="account-text">Have an account? <span class="login-link" onclick="window.location.href='login.html'">Log in</span></p> <!-- Log in link -->
     </div>
     <script src="script.js"></script> <!-- Link to external JavaScript file -->
 </body>
+
 </html>
