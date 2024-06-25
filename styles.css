@@ -1,112 +1,139 @@
 body {
-    background-color: #ffffff;
+    background-color: #fff4f1; /* Very light peach background */
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Allow space for the header */
     height: 100vh;
     margin: 0;
 }
 
+header {
+    width: 100%;
+    background-color: #ffb5a7; /* Light peach background */
+    padding: 30px 0; /* Padding on top and bottom */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    color: #FFFFFF; /* Header text color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the nav items horizontally */
+}
+
+.nav-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: #FFFFFF; /* White nav links */
+    font-weight: bold; /* Bold text */
+}
+
+.nav-item a:hover {
+    color: #ffd7c9; /* Lighter peach on hover */
+}
+
+/* Login link styles */
 .login-link {
-    color: #3674cb; /* Color for the login link */
+    color: #008080; /* Teal green */
     cursor: pointer; /* Change cursor to pointer */
 }
 
 .login-link:hover {
-    color: #1255b3; /* Change color on hover */
+    color: #005959; /* Darker teal on hover */
 }
 
+/* Account text styles */
 .account-text {
     text-align: center; /* Center the text */
     margin-top: 20px; /* Add some space above the text */
 }
 
+/* Error message styles */
 .error {
-    /* CSS class for error styling */
-    color: lightcoral;
-    /* Light red text color */
+    color: lightcoral; /* Light red text color */
 }
 
 .error-message {
-    color: rgb(240, 53, 53);
-    /* Light red text color */
+    color: rgb(240, 53, 53); /* Light red text color */
     text-align: center;
     margin-top: -10px;
     margin-bottom: 10px;
-
 }
 
+/* Password guidelines styles */
 .password-guidelines {
     display: inline-block; /* Display inline with input */
     margin-left: 120px; /* Space between input and guidelines */
     margin-top: 0px;
     margin-bottom: 30px;
-    color: #333; /* Darker color for guidelines */
+    color: #333333; /* Darker color for guidelines */
     font-size: 14px; /* Slightly smaller font size */
 }
 
-
-h1 {
+/* Heading styles */
+h1, h2 {
     text-align: center;
-    color: #000000;
+    color: #ff8a5c; /* Soft coral */
 }
 
-h2 {
-    text-align: center;
-    color: #000000;
-}
-
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Input group styles */
 .input-group {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    width: 125%;
+    width: 100%; /* Full width */
     max-width: 600px;
 }
 
 label {
-    width: 160px;
-    /* Adjust this width to align text boxes */
+    width: 160px; /* Adjust this width to align text boxes */
     margin-right: 10px;
-    color: #000000;
+    color: #333333; /* Dark text color */
     text-align: right;
 }
 
-input,
-select {
+input, select {
     flex: 1;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: inset 4px 4px 8px #b8c2be, inset -4px -4px 8px #ffffff;
-    /* Adds inner shadow for a 3D effect */
+    box-shadow: inset 4px 4px 8px #b8c2be, inset -4px -4px 8px #ffffff; /* Adds inner shadow for a 3D effect */
     font-size: 16px;
     appearance: none;
-    background-color: #ffffff;
+    background-color: #ffffff; /* White background for inputs */
 }
 
 /* Custom dropdown arrow */
 select {
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%232e7d32" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23008080" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Teal arrow */
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 20px;
-    padding-right: 40px;
-    /* Add space for the arrow */
+    padding-right: 40px; /* Add space for the arrow */
 }
 
+/* Button styles */
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background-color: #3674cb;
+    background-color: #ff8a5c; /* Soft coral */
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -117,5 +144,5 @@ button {
 }
 
 button:hover {
-    background-color: #1255b3;
+    background-color: #ff7043; /* Darker coral on hover */
 }
