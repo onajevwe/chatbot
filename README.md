@@ -1,4 +1,4 @@
-# HairNow
+# HairFro
 
 ## Introduction
 HairFro is a tech platform designed to connect users with hairstylists who specialize in various hair types, particularly textured hair. Our mission is to make it easier for individuals to find skilled professionals who understand their unique hair needs.
