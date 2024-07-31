@@ -1,0 +1,88 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#mainNavbar .navbar-brand {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.footer {
+    justify-content: space-between;
+}
+
+.loginlink {
+    text-decoration: none;
+}
+
+.login-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-signup {
+    margin-left: auto;
+}
+
+/* Password Rules Box */
+#passwordRules {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    color: #000;
+    margin-top: 10px;
+    z-index: 1;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+#passwordRules p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Validation Classes */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    content: ""; /* Checkmark symbol */
+    margin-right: 5px;
+}
+
+.invalid {
+    color: red;
+}
+
+#showPasswordCheckbox {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Show password rules box when password field is focused */
+#inputPassword4:focus + #passwordRules {
+    display: block;
+}
+/* Hide the valid state */
+.was-validated .form-control:valid{
+    border-color: none;
+    padding-right: none;
+    background-image: none;
+}
+
+/* Show the invalid state */
+.was-validated .form-control:invalid, .form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 24 24'%3e%3cpath d='M12 0c-1.657 0-3 1.343-3 3 0 1.658 1.343 3 3 3s3-1.342 3-3c0-1.657-1.343-3-3-3zM12 9c-1.658 0-3 1.343-3 3 0 1.658 1.342 3 3 3s3-1.342 3-3c0-1.657-1.342-3-3-3zm0 9c-1.658 0-3 1.342-3 3 0 1.657 1.342 3 3 3s3-1.343 3-3c0-1.658-1.342-3-3-3z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+

@@ -1,0 +1,44 @@
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000;
+}
+#mainNavbar .navbar-brand, footer h5 {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+}
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 10px;
+}
+.form-footer .form-check {
+    margin-right: auto;
+}
+
+.link-primary{
+    text-decoration: none;
+}
+
+.signup{
+    text-decoration: none;
+    
+}
+.img-fluid {
+    width: 100%;
+    height: auto;
+    margin-left: 85px;
+}
+.btn-primary{
+    max-width: 400px;
+}
